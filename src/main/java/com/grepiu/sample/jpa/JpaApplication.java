@@ -20,7 +20,7 @@ public class JpaApplication {
   CommandLineRunner init(MemberRepository repository) {
     return args -> {
       repository.deleteAll();
-      repository.save(new Member(0l,"tester","tester@mail.com",new Date()));
+      repository.save(new Member(0l,"tester","tester@mail.com",new Date(), null));
     };
   }
 
