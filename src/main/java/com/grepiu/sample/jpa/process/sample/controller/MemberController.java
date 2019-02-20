@@ -21,4 +21,5 @@ public class MemberController {
   public List<Member> getAllMembers() {
     return memberService.getMembers();
   }
+
 }

@@ -17,18 +17,20 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 /**
  *
- *
+ * 샘플 유저
  *
  */
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table
 @EntityListeners(AuditingEntityListener.class)
 @Data
 public class Member implements Serializable {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column
   private Long id;
 
   @Column
